@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ScrollView
 //
-//  Created by Jacques on 16/09/15.
+//  Created by Jack on 16/09/15.
 //  Copyright © 2015 ACME. All rights reserved.
 //
 

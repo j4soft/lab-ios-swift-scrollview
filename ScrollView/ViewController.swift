@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  ScrollView
 //
-//  Created by Jacques on 16/09/15.
+//  Created by Jack on 16/09/15.
 //  Copyright © 2015 ACME. All rights reserved.
 //
 
@@ -14,7 +14,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var contentView: UIView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         registerForKeyboardNotifications()
@@ -22,6 +21,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         hideKeyboardOnTouch()
     }
 
+    // Setup text fields delegate to view controller.
     func setupTextFieldsShouldReturn() {
         for subview in contentView.subviews {
             if subview is UITextField {
@@ -31,25 +31,29 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    // Hides keyboard when pressing return key.
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    // Setup tap gesture
     func hideKeyboardOnTouch() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
         view.addGestureRecognizer(tap)
     }
     
+    // Hide keyboard (called when tapping outside text fields).
     func DismissKeyboard(){
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
-    }
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
     }
     
+    // Define notifications when keyboard will be shown or hidden.
     func registerForKeyboardNotifications() {
         let notificationCenter = NSNotificationCenter.defaultCenter()
         notificationCenter.addObserver(self,
@@ -62,6 +66,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 object: nil)
     }
     
+    // Scrolls scroll view by the height of the keyboard.
     func keyboardWillBeShown(sender: NSNotification) {
         let info: NSDictionary = sender.userInfo!
         let value: NSValue = info.valueForKey(UIKeyboardFrameBeginUserInfoKey) as! NSValue
@@ -71,6 +76,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         scrollView.scrollIndicatorInsets = contentInsets
     }
     
+    // Reset scroll view scrolling when keyboard hides.
     func keyboardWillBeHidden(sender: NSNotification) {
         let contentInsets: UIEdgeInsets = UIEdgeInsetsZero
         scrollView.contentInset = contentInsets
