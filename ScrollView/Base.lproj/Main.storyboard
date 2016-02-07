@@ -148,20 +148,10 @@
                         <color key="backgroundColor" red="0.90588235294117647" green="0.94117647058823528" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="lyE-Fq-NpT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5ei-xo-PdJ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eBO-D3-ybQ" secondAttribute="bottom" constant="28" id="BH8-oJ-BfA"/>
                             <constraint firstAttribute="bottom" secondItem="lyE-Fq-NpT" secondAttribute="bottom" constant="20" symbolic="YES" id="Z9i-WG-DpO"/>
                             <constraint firstItem="lyE-Fq-NpT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="a5f-Ib-3Va"/>
                             <constraint firstItem="lyE-Fq-NpT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="hfg-gJ-n8y"/>
-                            <constraint firstItem="eBO-D3-ybQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lfM-8n-D9T"/>
-                            <constraint firstItem="eBO-D3-ybQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="twd-jD-DHd"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="lfM-8n-D9T"/>
-                                <exclude reference="twd-jD-DHd"/>
-                                <exclude reference="BH8-oJ-BfA"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="contentView" destination="eBO-D3-ybQ" id="h84-Qp-dPi"/>
