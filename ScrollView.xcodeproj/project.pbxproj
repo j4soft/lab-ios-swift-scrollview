@@ -400,7 +400,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ACME.ScrollView;
+				PRODUCT_BUNDLE_IDENTIFIER = J4SOFT.ScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -411,7 +411,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ACME.ScrollView;
+				PRODUCT_BUNDLE_IDENTIFIER = J4SOFT.ScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -483,6 +483,7 @@
 				C42FD6921BA9E5870018113A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C42FD6931BA9E5870018113A /* Build configuration list for PBXNativeTarget "ScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +492,7 @@
 				C42FD6951BA9E5870018113A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C42FD6961BA9E5870018113A /* Build configuration list for PBXNativeTarget "ScrollViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +501,7 @@
 				C42FD6981BA9E5870018113A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

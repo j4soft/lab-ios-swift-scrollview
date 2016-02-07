@@ -3,7 +3,7 @@
 //  ScrollView
 //
 //  Created by Jack on 16/09/15.
-//  Copyright © 2015 ACME. All rights reserved.
+//  Copyright © 2015 J4SOFT. All rights reserved.
 //
 
 import UIKit
@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var scrollView: UIScrollView!
-    
     @IBOutlet var contentView: UIView!
     
     override func viewDidLoad() {

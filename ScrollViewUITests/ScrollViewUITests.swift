@@ -3,7 +3,7 @@
 //  ScrollViewUITests
 //
 //  Created by Jacques on 16/09/15.
-//  Copyright © 2015 ACME. All rights reserved.
+//  Copyright © 2015 J4SOFT. All rights reserved.
 //
 
 import Foundation
