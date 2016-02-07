@@ -1,5 +1,5 @@
 # lab | iOS UIScrollView
-Scroll view example, including landscape mode and keyboard handling.
+Scroll view example, including landscape mode and keyboard handling, i.e. showing and hiding the keyboard.
 
 The ```UIScrollView``` has a red background, while the content view (```UIView```) has a yellow one.
 
