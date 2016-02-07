@@ -3,14 +3,13 @@ Scroll view example, including landscape mode and keyboard handling.
 
 The ```UIScrollView``` has a red background, while the content view (```UIView```) has a yellow one.
 
-
-** Portrait **
+**Portrait**
 ![Portrait](/Images/Portrait.png)
 
-** Landscape **
+**Landscape**
 ![Landscape](/Images/Landscape.png)
 
-** Landscape with keyboard **
+**Landscape with keyboard**
 ![Landscape](/Images/Landscape with keyboard.png)
 
 ## Prerequisites
